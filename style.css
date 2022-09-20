@@ -1,0 +1,458 @@
+body{
+    font-family: IRANSans;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+:root {
+    --myBoxShadow: 0 .3rem.5rem rgba(167, 167, 167);
+    --myBorder: .07rem solid rgb(214, 184, 10);
+    --myBorderRadius: 5px;
+    --myOutline: .1rem solid rgba(0, 0, 0, .1);
+    --myOutlineHover: .2rem solid var(--myBlack);
+  }
+
+  
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+
+  
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: .5rem;
+    -webkit-box-shadow: var(--myBoxShadow);
+            box-shadow: var(--myBoxShadow);
+  }
+
+  
+  nav .loginSignup button {
+    padding: .6rem .9rem;
+    border: var(--myBorder);
+    border-radius: var(--myBorderRadius);
+    cursor: pointer;
+    font-size: .6em;
+  }
+
+  
+  nav .loginSignup button i {
+    margin-left: .7rem;
+  }
+  
+  nav .loginSignup button:hover,
+  nav .loginSignup button:hover i{
+    background-color: black;
+    color: white;
+  }
+  
+  nav .navIcons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    min-width: 15%;
+    color: rgba(128, 128, 128, 0.702);
+  }
+  
+  nav .navIcons i {
+    cursor: pointer;
+  }
+  
+  nav .navIcons i:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    color: gray;
+  }
+  
+  .hero {
+    background: url(../images/hero.jpg) no-repeat;
+    background-position: 50% 80%;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+  }
+  
+  .hero p {
+    color: white;
+    position: absolute;
+    right: 10%;
+    top: 40%;
+  }
+  
+  .products .topCards {
+    margin-top: 1rem;
+  }
+  
+  .products .bottomCards {
+    display: flex;
+  }
+  
+  .products .topCards,
+  .products .bottomCards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .products .topCards .card,
+  .products .bottomCards .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: .3rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-shadow: var(--myBoxShadow);
+            box-shadow: var(--myBoxShadow);
+    width: 100%;
+    min-height: 40px;
+  }
+  
+  .products .topCards .card .top,
+  .products .bottomCards .card .top {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .card{
+    margin-bottom: 30px ;
+  }
+  
+  .products .topCards .card .top .stars,
+  .products .bottomCards .card .top .stars {
+    color: rgb(214, 184, 10);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  
+  .products .topCards .card .top .offer,
+  .products .bottomCards .card .top .offer {
+    background-color: rgb(179, 18, 18);
+    border-radius: 2px;
+    width: 50px;
+    height: 14px;
+    padding: .1rem;
+    font-size: .5em;
+    color: rgb(255,255,255);
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  
+  .products .topCards .card .center .centerImgName,
+  .products .bottomCards .card .center .centerImgName {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 25px;
+    margin-bottom: 1rem;
+    font-size: .6em;
+    margin-top: 10px;
+  }
+  
+  .products .topCards .card .center img,
+  .products .bottomCards .card .center img{
+    background-color: yellow;
+    width: 80%;
+  }
+  
+  .products .topCards .card .bottom,
+  .products .bottomCards .card .bottom {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .products .topCards .card .bottom .productIcons,
+  .products .bottomCards .card .bottom .productIcons {
+    color: white;
+    position: relative;
+  }
+  
+  .products .topCards .card .bottom .productIcons i,
+  .products .bottomCards .card .bottom .productIcons i {
+    background-color: rgba(0, 0, 0, 0.973);
+    color: rgb(214, 184, 10);
+    padding: .4rem;
+    border-radius: 40px;
+    cursor: pointer;
+    -webkit-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+  
+  .products .topCards .card .bottom .productIcons i span,
+  .products .bottomCards .card .bottom .productIcons i span {
+    margin-left: 15px;
+    display: none;
+    -webkit-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0.9;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .products .topCards .card .bottom .productIcons i:hover span,
+  .products .bottomCards .card .bottom .productIcons i:hover span {
+    display: inline;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    -webkit-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .products .topCards .card .bottom .productPrice,
+  .products .bottomCards .card .bottom .productPrice {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    flex-direction: row;
+    font-size: .7em;
+  }
+  
+  .gray-star {
+    color: rgb(114, 114, 114);
+  }
+  
+  .products .topCards .card .top .gray-offer,
+  .products .bottomCards .card .top .gray-offer {
+    background-color: rgb(114, 114, 114);
+  }
+  
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-orient: horizontal;
+    text-align: right;
+    background-color: rgb(0,0,0);
+    color: rgba(255,255,255);
+  }
+  
+  footer .aboutUs {
+    width: 100%;
+    padding: 2rem;
+  }
+  
+  footer .media {
+    width: 100%;
+    padding: 2rem;
+  }
+  
+  footer .media .mediaIcons {
+    margin-top: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  
+  @media (min-width: 600px) {
+    main .products .topCards,
+    main .products .bottomCards {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 100%;
+    }
+
+    main .products .topCards .topFirstProducts,
+    main .products .topCards .topSecondProducts,
+    main .products .topCards .bottomFirstCards,
+    main .products .topCards .bottomSecondProducts,
+    main .products .bottomCards .topFirstProducts,
+    main .products .bottomCards .topSecondProducts,
+    main .products .bottomCards .bottomFirstCards,
+    main .products .bottomCards .bottomSecondProducts {
+      margin: 20px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+    }
+
+    main .products .topCards .card,
+    main .products .bottomCards .card {
+      margin: 0 1rem;
+    }
+
+    main .products .topCards .card .top,
+    main .products .bottomCards .card .top {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+    }
+
+    main .products .topCards .card .top .productImg,
+    main .products .bottomCards .card .top .productImg {
+      -webkit-box-ordinal-group: 4;
+          -ms-flex-order: 3;
+              order: 3;
+    }
+
+    main .products .topCards .card .top .offer,
+    main .products .bottomCards .card .top .offer {
+      -webkit-box-ordinal-group: 5;
+          -ms-flex-order: 4;
+              order: 4;
+    }
+
+    main .products .topCards .card .bottom,
+    main .products .bottomCards .card .bottom {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+    }
+  }
+
+  @media (min-width: 992px) {
+    main .products .topCards,
+    main .products .bottomCards {
+      -webkit-box-orient: horizontal;
+    flex-direction: row-reverse;
+    }
+
+    main .products .bottomCards {
+      margin-top: 1.5rem;
+    }
+
+    main .topFirstProducts,
+    main .topSecondProducts,
+    main .bottomFirstCards,
+    main .bottomSecondProducts {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+
+    main .products .top .productImg img {
+      width: 20px;
+      height: 20px;
+    }
+  
+    footer{
+      flex-direction: row-reverse;
+    }
+  
+    footer .aboutUs{
+      width: 60%;
+    }
+  
+    footer .media{
+      width: 40%;
+    }
+  }
+  
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
